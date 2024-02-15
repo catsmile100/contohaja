@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catsmile Project</title>
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+            gap: 20px; /* Gap between columns */
+        }
+        .column {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+            text-align: left;
+        }
+        .mainnet h1, .testnet h1 {
+            font-size: 32px; /* Increased font size for titles */
+            margin-bottom: 20px; /* Added margin below titles */
+            color: #007bff; /* Name color */
+        }
+        .mainnet {
+            background-color: #2ecc71; /* Updated background color for Mainnet */
+        }
+        .testnet {
+            background-color: #e74c3c; /* Updated background color for Testnet */
+        }
+        .ascii-art {
+            margin-bottom: 20px;
+            text-align: center; /* Center ASCII text */
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Added gap between icons */
+        }
+        .social-icons a {
+            color: #007bff; /* Changed icon color to primary color */
+            text-decoration: none;
+            font-size: 48px; /* Increased icon size */
+            transition: color 0.3s ease; /* Added transition effect */
+        }
+        .social-icons a:hover {
+            color: #0056b3; /* Changed icon color on hover */
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Added transition effect */
+        }
+        button:hover {
+            background-color: #0056b3; /* Changed button color on hover */
+        }
+        .box {
+            border: 5px solid #007bff; /* Added border style */
+            border-radius: 5px;
+            display: inline-block;
+            padding: 5px 10px;
+            margin-top: 2px; /* Added margin top */
+        }
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .marquee-text {
+            white-space: nowrap; /* Prevent text from wrapping to the next line */
+            animation: marquee 20s linear infinite; /* Apply animation with duration of 20 seconds */
+            font-size: 34px; /* Increased font size */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Style for centering image */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px; /* Set height as needed */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Centered image -->
+<div class="image-container">
+    <img src="https://bafkreif6sifl3owmtmcwhnuooiujajdrx22274e3irsxu36stok43f3tba.ipfs.nftstorage.link/" alt="Gambar" style="width: 30%; height: auto;">
+</div>
+
+<div class="marquee-container">
+    <div class="marquee-text">
+        Powerloom | BlockX | Pactus Chain | Massalab | Namada | Nulink | Mantrachain | Entrypoint | Entangled | Prymz | Lumoz
+    </div>
+</div>
+
+<div class="container">
+        <div class="column mainnet">
+            <h1>Mainnet</h1>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Powerloom</h1>
+                <p><a href="https://github.com/catsmile100/Validor-Mainnet/tree/main/Powerloom"><button class="box">Documentation</button></a></p>
+                <p><a href="https://snapshotter-dashboard.powerloom.network"><button class="box">Stake</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">BlockX</h1>
+                <p><a href="https://github.com/catsmile100/Validor-Mainnet/blob/main/BlockX"><button class="box">Documentation</button></a></p>
+                <p><a href="https://ping.blockxnet.com/blockx/staking/blockxvaloper1fk7wy5jxnqrlsjwh68k9qm3mdtg96w33879dry"><button class="box">Stake</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Pactus Chain</h1>
+                <p><a href="https://github.com/catsmile100/Validator-Testnet/tree/main/Pactus"><button class="box">Documentation</button></a></p>
+                <p><a href="https://pacscan.org/address/pc1pfyth9kd4rtjpl0k80773fsq9z7wd9z92v5cew3"><button class="box">Stake</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Massalab</h1>
+                <p><a href="https://github.com/catsmile100/Validor-Mainnet/tree/main/MassaLab"><button class="box">Documentation</button></a></p>
+                <p><a href="soon"><button class="box">Stake</button></a></p>
+            </div>
+        </div>
+        <div class="column testnet">
+            <h1>Testnet</h1>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Namada</h1>
+                <p><a href="https://docs.namada.info"><button class="box">Documentation</button></a></p>
+                <p><a href="soon"><button class="box">Stake</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Nulink</h1>
+                <p><a href="https://github.com/catsmile100/Validator-Testnet/tree/main/Nulink"><button class="box">Documentation</button></a></p>
+                <p><a href="https://dashboard.testnet.nulink.org/"><button class="box">Validator</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Mantrachain</h1>
+                <p><a href="https://github.com/catsmile100/Validator-Testnet/tree/main/Mantra%20Chain"><button class="box">Documentation</button></a></p>
+                <p><a href="https://testnet.itrocket.net/mantra/staking/mantravaloper1wvh4zdftncywjnskvmnug8369rdjxmtaa2qymn"><button class="box">Validator</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Entrypoint</h1>
+                <p><a href="https://github.com/catsmile100/Validator-Testnet/blob/main/Entrypoint"><button class="box">Documentation</button></a></p>
+                <p><a href="https://explorer.nodex.one/entrypoint/staking/entrypointvaloper1lr0xtcj7zcq44qzrzneg3wa5wcs68w5xf3rmrz"><button class="box">Validator</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Entangled</h1>
+                <p><a href="https://github.com/catsmile100/Validator-Testnet/tree/main/Entangle"><button class="box">Documentation</button></a></p>
+                <p><a href="https://testnet.itrocket.net/entangle/staking/ethmvaloper1pfpwlch4lk3d6k9wxfwjlsdrpcdf45xxxglum8"><button class="box">Validator</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Prymz</h1>
+                <p><a href="https://github.com/catsmile100/Validator-Testnet/tree/main/PRYMZM"><button class="box">Documentation</button></a></p>
+                <p><a href="https://testnet.itrocket.net/pryzm/staking/pryzmvaloper1x3z27wjdr02vg72mrmmlf239gzyhkmsplx9p3k"><button class="box">Validator</button></a></p>
+            </div>
+            <div class="chain-info">
+                <h1 style="color: #fff;">Lumoz</h1>
+                <p><a href="https://github.com/catsmile100/Validator-Testnet/tree/main/Lumoz"><button class="box">Documentation</button></a></p>
+                <p><a href="https://lumoz.org/leaderboard"><button class="box">Validator</button></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://twitter.com/catsmileaja"><i class="fab fa-twitter"></i></a>
+        <a href="https://discord.com/users/399571183986802688"><i class="fab fa-discord"></i></a>
+        <a href="https://t.me/deleletaccount"><i class="fab fa-telegram"></i></a>
+        <a href="https://github.com/catsmile100"><i class="fab fa-github"></i></a>
+    </div>
+</body>
+</html>
